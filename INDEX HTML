@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Brandlogs – We're Joining Forces</title>
+  <meta name="description" content="Brandlogs is moving to a new home. Accounts preserved. Contact info@brandlogs.com for help." />
+  <link rel="icon" href="data:,">
+  <style>
+    /* Basic reset + system font stack */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,system-ui,Arial,sans-serif;
+      background:linear-gradient(180deg,#f8fafc,#ffffff);
+      color:#111827;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:28px;
+    }
+
+    /* Page container */
+    .wrap{
+      width:100%;
+      max-width:940px;
+      background:#fff;
+      border-radius:14px;
+      box-shadow:0 12px 30px rgba(15,23,42,0.08);
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+    }
+
+    header{
+      padding:36px 44px;
+      background:linear-gradient(90deg,#0ea5e9 0%,#6366f1 100%);
+      color:#fff;
+    }
+    .brand{
+      font-size:28px;
+      font-weight:700;
+      letter-spacing:-0.4px;
+      margin-bottom:6px;
+    }
+    .subtitle{opacity:0.95;font-size:15px}
+
+    main{
+      padding:36px 44px;
+      display:flex;
+      gap:28px;
+      flex-direction:column;
+    }
+
+    .status{
+      background:#f8fafc;
+      border:1px solid #e6eefb;
+      padding:22px;
+      border-radius:10px;
+      display:flex;
+      gap:20px;
+      align-items:flex-start;
+    }
+
+    .status .left{
+      flex:0 0 6px;
+      height:64px;
+      border-radius:6px;
+      background:linear-gradient(180deg,#2563eb,#60a5fa);
+    }
+
+    .status h1{
+      font-size:20px;color:#0f172a;margin-bottom:8px;
+    }
+    .status p{color:#374151;line-height:1.5}
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:16px;
+      margin-top:4px;
+    }
+
+    .card{
+      background:#fff;
+      border:1px solid #eef2ff;
+      padding:18px;
+      border-radius:8px;
+      box-shadow:0 6px 18px rgba(15,23,42,0.03);
+    }
+    .card h3{color:#1e3a8a;margin-bottom:6px;font-size:15px}
+    .card p{color:#475569;font-size:14px;line-height:1.45}
+
+    .notice{
+      margin-top:18px;
+      background:#fff7ed;
+      border:1px solid #ffedd5;
+      padding:16px;
+      border-radius:8px;
+      color:#92400e;
+    }
+
+    .contact{
+      margin-top:6px;
+      display:flex;
+      gap:12px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .mailto{
+      display:inline-block;
+      padding:8px 12px;
+      background:#1e40af;
+      color:#fff;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      font-size:14px;
+    }
+    .hint{color:#475569;font-size:14px}
+
+    .faq{
+      margin-top:18px;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .faq h2{font-size:16px;color:#0f172a;margin-bottom:6px}
+    .faq-item{
+      background:#ffffff;
+      border:1px solid #eef2ff;
+      padding:14px;
+      border-radius:8px;
+    }
+    .q{font-weight:700;color:#1e3a8a;margin-bottom:6px}
+    .a{color:#334155}
+
+    footer{
+      padding:18px 24px;
+      border-top:1px solid #f1f5f9;
+      background:transparent;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      font-size:13px;
+      color:#6b7280;
+    }
+
+    @media (max-width:640px){
+      header{padding:20px}
+      main{padding:20px}
+      .brand{font-size:22px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main" aria-labelledby="page-title">
+    <header>
+      <div id="page-title" class="brand">Brandlogs</div>
+      <div class="subtitle">We're joining forces — temporary maintenance & migration</div>
+    </header>
+
+    <main>
+      <section class="status" aria-live="polite">
+        <div class="left" aria-hidden="true"></div>
+        <div class="content">
+          <h1>Our full website is temporarily offline while we transition</h1>
+          <p>We're moving Brandlogs into our new platform. Thank you for your support — exciting things are ahead. Your account and data will be preserved during the migration.</p>
+        </div>
+      </section>
+
+      <section class="grid" aria-label="migration highlights">
+        <div class="card">
+          <h3>Transition underway</h3>
+          <p>Platform integration and data migration are in progress to provide a faster, more secure experience.</p>
+        </div>
+
+        <div class="card">
+          <h3>New site coming soon</h3>
+          <p>We're polishing the new design and testing features before launch to ensure a smooth experience for all users.</p>
+        </div>
+
+        <div class="card">
+          <h3>User accounts preserved</h3>
+          <p>All account information, settings and subscriptions will be migrated. No action required — just include your account email if you contact support.</p>
+        </div>
+      </section>
+
+      <section class="notice" role="note">
+        <strong>Important:</strong>
+        <div style="margin-top:8px">
+          If you have any inquiries, please contact us at
+          <span class="contact">
+            <a class="mailto" href="mailto:info@brandlogs.com?subject=Brandlogs%20Migration%20Support">info@brandlogs.com</a>
+            <span class="hint">Include your account email so we can locate your data quickly.</span>
+          </span>
+        </div>
+      </section>
+
+      <section class="faq" aria-label="Frequently Asked Questions">
+        <h2>Frequently asked questions</h2>
+
+        <div class="faq-item" role="article">
+          <div class="q">Will my account data be preserved?</div>
+          <div class="a">Yes — accounts, subscriptions and settings will be migrated. If you need immediate assistance, email <strong>info@brandlogs.com</strong> and include your account email.</div>
+        </div>
+
+        <div class="faq-item" role="article">
+          <div class="q">When will the new site be live?</div>
+          <div class="a">We expect the new site to go live soon once testing completes. We will update users via email. If you don't receive updates, contact support.</div>
+        </div>
+
+        <div class="faq-item" role="article">
+          <div class="q">Can I still access my account now?</div>
+          <div class="a">During some parts of the migration there may be limited access. If you cannot sign in, email support with your account email and we'll help.</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>&copy; <strong>Brandlogs</strong> — All rights reserved.</div>
+      <div style="opacity:.85">Last updated: <time datetime="">Dec 4, 2025</time></div>
+    </footer>
+  </div>
+</body>
+</html>
