@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bsocio Humanity Fund Is Coming Soon</title>
+    <meta name="description" content="The Bsocio Humanity Fund is a global initiative dedicated to ending classroom hunger, safeguarding philanthropic progress beyond 2045, and building sustainable solutions for children worldwide." />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+
+        /* White Header */
+        header {
+            background: #ffffff;
+            padding: 0.8rem 5%;
+            position: sticky;
+            margin-bottom: 50px;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #2A5CBD;
+            letter-spacing: -0.8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2A5CBD 0%, #1e4a9f 100%);
+            color: #ffffff;
+            padding: 10rem 5% 12rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(124, 187, 0, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 4.5rem;
+            font-weight: 700;
+            margin-bottom: 2.5rem;
+            line-height: 1.1;
+            letter-spacing: -1.5px;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.6rem;
+            font-weight: 300;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.95);
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .hero .accent {
+            color: #7CBB00;
+            font-weight: 400;
+        }
+
+        .hero .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.85;
+            margin-top: 3rem;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Section Base */
+        section {
+            padding: 7rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #2A5CBD;
+            margin-bottom: 3.5rem;
+            letter-spacing: -1px;
+            position: relative;
+            display: block;
+        }
+
+        section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: #7CBB00;
+        }
+
+        section h3 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #7CBB00;
+            margin-bottom: 1.5rem;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            margin-bottom: 1.8rem;
+            color: #333;
+        }
+
+        .bg-white {
+            background: #ffffff;
+        }
+
+        .bg-light {
+            background: #f8f9fa;
+        }
+
+        .bg-blue {
+            background: linear-gradient(135deg, #2A5CBD 0%, #1e4a9f 100%);
+            color: #ffffff;
+        }
+
+        .bg-blue h2,
+        .bg-blue h3 {
+            color: #ffffff;
+        }
+
+        .bg-blue h2::after {
+            background: #7CBB00;
+        }
+
+        .bg-blue p {
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        /* Content Container */
+        .content-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .stat-card {
+            background: #ffffff;
+            padding: 3.5rem 2.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 5px solid #7CBB00;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 30px rgba(42, 92, 189, 0.15);
+        }
+
+        .stat-card .number {
+            font-size: 4rem;
+            font-weight: 700;
+            color: #2A5CBD;
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+
+        .stat-card .label {
+            font-size: 1.15rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* List Styles */
+        .styled-list {
+            list-style: none;
+            margin-top: 2.5rem;
+        }
+
+        .styled-list li {
+            font-size: 1.2rem;
+            padding: 1.5rem 0 1.5rem 2.5rem;
+            border-left: 5px solid #7CBB00;
+            margin-bottom: 1.8rem;
+            background: #ffffff;
+            padding-left: 2.5rem;
+            border-radius: 0 4px 4px 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .styled-list li:hover {
+            transform: translateX(8px);
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        .styled-list li strong {
+            color: #2A5CBD;
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        /* Initiatives Grid */
+        .initiatives-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+            gap: 4rem;
+            margin-top: 4rem;
+        }
+
+        .initiative-block {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 3rem;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .initiative-block h3 {
+            color: #7CBB00;
+            font-size: 2.2rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .initiative-block p {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .initiative-block ul {
+            list-style: none;
+            margin-top: 2rem;
+        }
+
+        .initiative-block li {
+            padding: 1rem 0 1rem 2rem;
+            position: relative;
+            font-size: 1.15rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .initiative-block li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #7CBB00;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        /* MVB Grid */
+        .mvb-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .mvb-block {
+            background: #ffffff;
+            padding: 3.5rem 3rem;
+            border-radius: 8px;
+            border-left: 6px solid #7CBB00;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .mvb-block:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+
+        .mvb-block h3 {
+            font-size: 1.7rem;
+            margin-bottom: 1.5rem;
+            color: #2A5CBD;
+        }
+
+        .mvb-block p {
+            font-size: 1.15rem;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        /* Focus Grid */
+        .focus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+
+        .focus-item {
+            text-align: center;
+            padding: 3rem 2.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-top: 5px solid #2A5CBD;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .focus-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(42, 92, 189, 0.12);
+        }
+
+        .focus-item h3 {
+            font-size: 1.5rem;
+            color: #2A5CBD;
+            margin-bottom: 0;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #2A5CBD 0%, #1e4a9f 100%);
+            color: #ffffff;
+            text-align: center;
+            padding: 8rem 5%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 70% 50%, rgba(124, 187, 0, 0.1) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-section h2 {
+            color: #ffffff;
+            font-size: 3.2rem;
+            margin-bottom: 2rem;
+            letter-spacing: -1px;
+        }
+
+        .cta-section h2::after {
+            display: none;
+        }
+
+        .cta-section p {
+            font-size: 1.4rem;
+            color: rgba(255, 255, 255, 0.95);
+            max-width: 800px;
+            margin: 0 auto 3.5rem;
+            line-height: 1.7;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #F65314;
+            color: #ffffff;
+            padding: 1.4rem 4rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 4px 20px rgba(246, 83, 20, 0.3);
+        }
+
+        .cta-button:hover {
+            background: #d94512;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 30px rgba(246, 83, 20, 0.4);
+        }
+
+        /* Leadership Page */
+        .leadership-page {
+            display: none;
+            min-height: 100vh;
+        }
+
+        .leadership-page.active {
+            display: block;
+        }
+
+        .leadership-hero {
+            background: linear-gradient(135deg, #2A5CBD 0%, #1e4a9f 100%);
+            color: #ffffff;
+            padding: 8rem 5% 10rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .leadership-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(124, 187, 0, 0.08) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .leadership-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .leadership-hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            letter-spacing: -1.5px;
+        }
+
+        .leadership-hero p {
+            font-size: 1.4rem;
+            font-weight: 300;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        /* Tab Navigation */
+        .tab-navigation {
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            background: #f8f9fa;
+            padding: 0;
+            border-bottom: 3px solid #e0e0e0;
+            position: sticky;
+            top: 80px;
+            z-index: 999;
+        }
+
+        .tab-button {
+            background: transparent;
+            color: #666;
+            border: none;
+            padding: 1.5rem 4rem;
+            font-size: 1.15rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+            margin-bottom: -3px;
+            position: relative;
+        }
+
+        .tab-button::before {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #2A5CBD;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .tab-button:hover {
+            color: #2A5CBD;
+            background: rgba(42, 92, 189, 0.05);
+        }
+
+        .tab-button.active {
+            color: #2A5CBD;
+        }
+
+        .tab-button.active::before {
+            transform: scaleX(1);
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* President Page */
+        .president-section {
+            padding: 6rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .president-intro {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .president-photo {
+            width: 220px;
+            height: 270px;
+            object-fit: cover;
+            border-radius: 14px;
+            border: 4px solid #7CBB00;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 16px rgba(42,92,189,0.10);
+        }
+
+        .president-intro h2 {
+            font-size: 3.5rem;
+            color: #2A5CBD;
+            margin-bottom: 0.8rem;
+        }
+
+        .president-intro h2::after {
+            display: none;
+        }
+
+        .president-role {
+            font-size: 1.4rem;
+            color: #7CBB00;
+            font-weight: 500;
+            margin-bottom: 2.5rem;
+        }
+
+        .president-tagline {
+            font-size: 1.5rem;
+            color: #2A5CBD;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .president-description {
+            max-width: 850px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.9;
+            color: #333;
+        }
+
+        .pullquote {
+            background: linear-gradient(to right, #f8f9fa 0%, #ffffff 100%);
+            border-left: 6px solid #7CBB00;
+            padding: 3rem 3.5rem;
+            margin: 4rem 0;
+            font-size: 1.5rem;
+            font-style: italic;
+            color: #2A5CBD;
+            line-height: 1.7;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+        }
+
+        .pullquote cite {
+            display: block;
+            font-style: normal;
+            font-size: 1.1rem;
+            color: #666;
+            margin-top: 1.5rem;
+            font-weight: 600;
+        }
+
+        /* Team Page */
+        .team-intro {
+            padding: 5rem 5%;
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #f8f9fa;
+        }
+
+        .team-intro h2 {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .team-intro p {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            color: #333;
+            text-align: center;
+        }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3.5rem;
+            padding: 5rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+            background: #ffffff;
+        }
+
+        .profile-card {
+            background: #f8f9fa;
+            padding: 3.5rem;
+            border-radius: 12px;
+            border-left: 6px solid #7CBB00;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 3rem;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+        }
+
+        .profile-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 8px 30px rgba(42, 92, 189, 0.12);
+            border-left-color: #2A5CBD;
+        }
+
+        .profile-photo {
+            width: 200px;
+            height: 240px;
+            border-radius: 12px;
+            object-fit: cover;
+            border: 4px solid #2A5CBD;
+            background: #fff;
+            flex-shrink: 0;
+            box-shadow: 0 4px 20px rgba(42, 92, 189, 0.15);
+        }
+
+        .profile-content h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #2A5CBD;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-content .role {
+            font-size: 1.2rem;
+            color: #7CBB00;
+            font-weight: 600;
+            margin-bottom: 1.8rem;
+            display: block;
+        }
+
+        .profile-content p {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: #444;
+            margin-bottom: 1rem;
+        }
+
+        .profile-content p strong {
+            color: #2A5CBD;
+            font-size: 1.15rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: #ffffff;
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        footer p {
+            color: #999;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: #7CBB00;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #a0d840;
+            text-decoration: underline;
+        }
+         .bsocio-logo {
+            font-family: 'Arial', sans-serif;
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #1A1A1A;
+            position: relative;
+            display: inline-block;
+            letter-spacing: -0.8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .bsocio-logo .b {
+            color: #2A5CBD;
+        }
+        .bsocio-logo .dot {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #F65314;
+            border-radius: 50%;
+            bottom: 5px;
+            right: -15px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .bsocio-logo:hover .b {
+            color: #1E429F;
+        }
+        .bsocio-logo:hover .dot {
+            background-color: #D3450F;
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 1024px) {
+            .initiatives-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1,
+            .leadership-hero h1 {
+                font-size: 2.8rem;
+            }
+
+            .hero p,
+            .leadership-hero p {
+                font-size: 1.3rem;
+            }
+
+            section {
+                padding: 5rem 5%;
+            }
+
+            section h2 {
+                font-size: 2.2rem;
+            }
+
+            .stats-grid,
+            .mvb-grid,
+            .focus-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-card {
+                padding: 2.5rem;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+                text-align: center;
+            }
+
+            .profile-photo {
+                width: 160px;
+                height: 200px;
+            }
+
+            .tab-navigation {
+                top: 75px;
+            }
+
+            .tab-button {
+                padding: 1.2rem 2rem;
+                font-size: 1rem;
+            }
+
+            .president-intro h2 {
+                font-size: 2.5rem;
+            }
+
+            .pullquote {
+                padding: 2rem;
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Home Page -->
+    <div id="homePage">
+        <header>
+            <div class="header-container">
+                   <div class="bsocio-logo">
+                       <span class="b">B</span>socio<span class="dot"></span>
+                   </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>The Bsocio Humanity Fund Is Coming Soon</h1>
+                    <p>
+                        Building a future where no child goes to school hungry—and where the mission of
+                        <span class="accent">saving lives continues beyond 2045</span>.
+                    </p>
+                    <!-- <p class="subtitle">Why Now</p> -->
+                </div>
+            </section>
+
+            <section class="bg-light">
+                <div class="content-container">
+                    <h2>Why This Moment Matters</h2>
+                    <p>
+                        Bsocio means <strong>"Be Kind to Be Great — like Bill Gates."</strong><br />
+                        The greatest humanitarian hero of our time.
+                    </p>
+                    <p>
+                        For decades, visionary philanthropy has changed the course of global health,
+                        education, and human survival.
+                    </p>
+                    <p><strong>Imagine a world without his $300 billion in lifetime giving…</strong></p>
+                    <ul class="styled-list">
+                        <li>Fewer vaccines.</li>
+                        <li>Fewer children in school.</li>
+                        <li>Fewer lives saved.</li>
+                    </ul>
+                    <p>
+                        Now, a new generation must carry the torch forward—
+                        amplified by technology, guided by evidence, and grounded in humanity.
+                    </p>
+                </div>
+            </section>
+
+            <section class="bg-white">
+                <h2>About the Bsocio Humanity Fund</h2>
+                <p>
+                    The Bsocio Humanity Fund is a <strong>$300 billion global action framework</strong>
+                    designed to honor, expand, and safeguard Bill Gates's philanthropic legacy.
+                </p>
+                <p>
+                    A <strong>$9 billion annual funding gap</strong> threatens decades of progress.
+                    To close it, our founding members have committed <strong>$3 billion</strong> to seed
+                    the Bsocio Humanity Fund—a perpetual engine designed to end classroom hunger worldwide
+                    and carry forward his mission of saving lives beyond 2045.
+                </p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="number">$300B</div>
+                        <div class="label">Global action framework</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number">$3B</div>
+                        <div class="label">Seeded founding commitment</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number">$9B</div>
+                        <div class="label">Annual funding gap at risk</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-blue">
+                <h2>Anchoring Initiatives</h2>
+                <div class="initiatives-grid">
+                    <div class="initiative-block">
+                        <h3>Bill Gates Socio Day — October 28</h3>
+                        <p>
+                            A global day of action designed to be celebrated every year beyond his lifetime.
+                            On this day, individuals and organizations redirect celebration spending toward
+                            child hunger, health, and education.
+                        </p>
+                        <ul>
+                            <li>Mobilize millions toward solving urgent global challenges</li>
+                            <li>Amplify awareness through shared storytelling and advocacy</li>
+                            <li>Ensure legacy by embedding generosity into global culture</li>
+                        </ul>
+                    </div>
+                    <div class="initiative-block">
+                        <h3>Bill Gates Socio Centres</h3>
+                        <p>
+                            Future global hubs of innovation and opportunity—equipped with school feeding
+                            systems across 100+ countries, delivering sustainable nutrition to
+                            <strong>500 million children every year</strong>.
+                        </p>
+                        <p><strong>So no child ever learns on an empty stomach.</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-light">
+                <div class="content-container">
+                    <h2>Why Classroom Hunger Must End</h2>
+                    <ul class="styled-list">
+                        <li>45 million children arrive at school hungry every day</li>
+                        <li>Malnutrition reduces primary school completion rates by 20%</li>
+                        <li>Countries lose up to 10% of GDP due to childhood stunting</li>
+                    </ul>
+                    <p>
+                        Ending classroom hunger is one of the highest-return investments
+                        in human progress.
+                    </p>
+                </div>
+            </section>
+
+            <section class="bg-white">
+                <h2>Our Story</h2>
+                <p>
+                    What began as a 70th birthday tribute to Bill Gates has evolved into the
+                    <strong>Bsocio Like Bill Gates Movement</strong>—a global call to action
+                    dedicated to scaling his vision.
+                </p>
+                <p>
+                    Co-created by friends, believers, and changemakers worldwide,
+                    we are turning gratitude into action—proving that strategic kindness
+                    can solve humanity's greatest challenges.
+                </p>
+            </section>
+
+            <section class="mvb">
+                <h2>Why This Movement Now?</h2>
+                <p>
+                    Bill Gates has shown the world how focused generosity can transform
+                    health, education, and innovation.
+                </p>
+                <p>
+                    With the Gates Foundation set to sunset in 2045, a critical question emerges:
+                    how do we ensure this momentum not only continues—but grows?
+                </p>
+                <p><strong>Our answer:</strong> Empower people everywhere to make compassion a daily practice.</p>
+            </section>
+
+            <section class="mvb">
+                <h2>Our Foundation</h2>
+                <div class="mvb-grid">
+                    <div class="mvb-block">
+                        <h3>Our Mission</h3>
+                        <p>
+                            To inspire one billion acts of kindness by transforming everyday
+                            celebrations into shared moments of impact.
+                        </p>
+                    </div>
+                    <div class="mvb-block">
+                        <h3>Our Vision</h3>
+                        <p>
+                            A world where compassion becomes our global culture and every
+                            person sees themselves as a hero of change.
+                        </p>
+                    </div>
+                    <div class="mvb-block">
+                        <h3>Our Belief</h3>
+                        <p>
+                            Like Bill Gates, we believe true greatness is measured by
+                            how many people you lift.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="focus-areas">
+                <h2>Focus Areas</h2>
+                <div class="focus-grid">
+                    <div class="focus-item"><h3>Ending Child Hunger</h3></div>
+                    <div class="focus-item"><h3>Innovation & Technology for Good</h3></div>
+                    <div class="focus-item"><h3>Global Health</h3></div>
+                    <div class="focus-item"><h3>Sustainable Development</h3></div>
+                </div>
+            </section>
+
+            <section class="about-fund">
+                <h2>How We Create Impact</h2>
+                <p><strong>Human-Centered Giving</strong><br />
+                Solutions designed around real lives—not headlines.</p>
+                <p><strong>Evidence-Led Action</strong><br />
+                Data, accountability, and measurable outcomes.</p>
+                <p><strong>Strategic Partnerships</strong><br />
+                Working alongside governments, innovators, and communities.</p>
+                <p><strong>Cultural Influence</strong><br />
+                Turning global awareness into sustained action at scale.</p>
+            </section>
+
+            <section class="moment">
+                <div class="moment-content">
+                    <h2>A Coalition for Our Shared Future</h2>
+                    <p>
+                        This mission is bigger than any institution—but achievable when humanity acts together.
+                    </p>
+                    <p>
+                        We are building a global coalition of philanthropists, governments, businesses,
+                        creators, and citizens to ensure no child ever learns on an empty stomach.
+                    </p>
+                    <p><strong>Be Kind to Be Great.</strong><br />
+                    Join the movement redefining what it means to celebrate life.</p>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <h2>The Bsocio Humanity Fund officially launches soon.</h2>
+                <p>
+                    Follow our social media pages to get updates and understand how it works.
+                </p>
+                <button class="cta-button">Learn More</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>© Bsocio Humanity Fund</p>
+            <p>
+                <a href="mailto:Acquisitionteam@bsocio.org">
+                    Acquisitionteam@bsocio.org
+                </a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- Leadership Page with Tabs -->
+    <div id="leadershipPage" class="leadership-page">
+        <header>
+            <div class="header-container">
+                   <div class="bsocio-logo">
+                       <span class="b">B</span>socio<span class="dot"></span>
+                   </div>
+            </div>
+        </header>
+
+        <div class="leadership-hero">
+            <div class="leadership-hero-content">
+                <h1>Leadership</h1>
+                <p>
+                    Meet the visionaries guiding our mission to end classroom hunger and
+                    carry forward transformative philanthropy beyond 2045.
+                </p>
+            </div>
+        </div>
+
+        <div class="tab-navigation">
+           <button class="tab-button" data-route="/president">President</button>
+           <button class="tab-button" data-route="/leadership/team">Our Team</button>
+        </div>
+
+        <!-- President Tab Content -->
+        <div id="presidentTab" class="tab-content">
+            <section class="president-section">
+                <div class="president-intro">
+                    <img src="images/Jonathan Batiste.jpg" alt="Jonathan Batiste" class="president-photo">
+                    <h2>Jonathan Batiste</h2>
+                    <p class="president-role">Cultural Strategist • President & Board Member</p>
+                    <p class="president-tagline">
+                        Culture in Service of Humanity
+                    </p>
+                    <p class="president-description">
+                        Grammy-winning artist and philanthropist advancing global missions—most recently
+                        spotlighting hunger awareness alongside Bill Gates—by turning urgency into empathy
+                        and action.
+                    </p>
+                </div>
+
+                <h2 style="text-align: center; margin-bottom: 3rem;">Human Stories. Global Impact.</h2>
+                <p>
+                    Jonathan brings culture to the center of philanthropy—ensuring that global priorities
+                    like hunger, equity, and dignity are understood not just as statistics, but as human
+                    realities that demand collective action.
+                </p>
+
+                <div class="pullquote">
+                    "Philanthropy begins with listening—honoring dignity and standing with communities as they
+                    define their own futures."
+                    <cite>— Jonathan Batiste</cite>
+                </div>
+
+                <h2>Leadership & Governance</h2>
+                <div class="moment-content">
+                    <ul class="styled-list">
+                        <li>Shapes cultural strategy at the highest level of the organization</li>
+                        <li>Grounds governance in empathy, ethics, and long-term impact</li>
+                        <li>Aligns global objectives with lived local realities</li>
+                        <li>Bridges philanthropy, policy, and creative sectors</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!-- Team Tab Content -->
+        <div id="teamTab" class="tab-content">
+            <section class="intro-section">
+                <h2>Leadership Built for Global Impact</h2>
+                <p>
+                    Our leadership spans technology, global health, sports, entertainment,
+                    digital ethics, and policy advocacy. This intentional diversity creates
+                    a unique decision-making environment where Silicon Valley innovation meets
+                    Geneva policy-making, London cultural influence, and Kenyan ingenuity.
+                </p>
+            </section>
+
+            <div class="profile-grid">
+                <article class="profile-card">
+                    <img class="profile-photo" src="images/Titus Gicharu.jpg" alt="Titus Gicharu">
+                    <div class="profile-content">
+                        <h3>Titus Gicharu</h3>
+                        <span class="role">CEO and Board Member</span>
+                        <p><strong>Visionary Architect</strong></p>
+                        <p>
+                            A strategic thinker with deep roots in both African entrepreneurship
+                            and global systems change, Titus provides the foundational vision and
+                            operational discipline to transform ambitious goals into measurable
+                            outcomes. His leadership ensures that Bsocio remains anchored in both
+                            innovation and integrity.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="profile-card">
+                    <img class="profile-photo" src="images/Anil Dash.jpg" alt="Anil Dash">
+                    <div class="profile-content">
+                        <h3>Anil Dash</h3>
+                        <span class="role">Board Member</span>
+                        <p><strong>Technology Ethicist & Digital Strategist</strong></p>
+                        <p>
+                            A pioneer in examining technology's impact on society, Anil ensures
+                            our digital tools and platforms empower rather than exploit. He guides
+                            Bsocio's responsible innovation framework in an increasingly connected world.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="profile-card">
+                    <img class="profile-photo" src="images/David Beckham.jpg" alt="David Beckham">
+                    <div class="profile-content">
+                        <h3>David Beckham</h3>
+                        <span class="role">Board Member</span>
+                        <p><strong>Global Influence Ambassador</strong></p>
+                        <p>
+                            One of the world's most recognized and trusted figures, David transforms
+                            awareness into action. His unparalleled global platform and philanthropic
+                            experience mobilize public will and private sector partnerships at
+                            unprecedented scale.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="profile-card">
+                    <img class="profile-photo" src="images/Michael Sheldrick.jpg" alt="Michael Sheldrick">
+                    <div class="profile-content">
+                        <h3>Michael Sheldrick</h3>
+                        <span class="role">Board Member</span>
+                        <p><strong>Policy & Advocacy Architect</strong></p>
+                        <p>
+                            Co-founder of Global Citizen and a master of policy-driven change,
+                            Michael bridges grassroots activism with governmental action. His
+                            expertise turns public momentum into legislative and financial commitments.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="profile-card">
+                    <img class="profile-photo" src="images/Lawrence Haddad.jpg" alt="Dr. Lawrence Haddad">
+                    <div class="profile-content">
+                        <h3>Dr. Lawrence Haddad</h3>
+                        <span class="role">Board Member</span>
+                        <p><strong>Global Health & Nutrition Authority</strong></p>
+                        <p>
+                            Executive Director of the Global Alliance for Improved Nutrition (GAIN)
+                            and World Food Prize laureate, Dr. Haddad brings evidence-based rigor
+                            to our health and nutrition initiatives, ensuring interventions are
+                            scientifically sound and scalable.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="profile-card">
+                    <img class="profile-photo" src="images/Catherine Kamau.jpg" alt="Catherine Kamau">
+                    <div class="profile-content">
+                        <h3>Catherine Kamau</h3>
+                        <span class="role">Goodwill Ambassador</span>
+                        <p><strong>Voice of the Community</strong></p>
+                        <p>
+                            A beloved actress and authentic connector to everyday realities,
+                            Catherine ensures our initiatives remain grounded in human experience.
+                            She amplifies community voices within our leadership chambers and
+                            brings our work to life through storytelling.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <footer>
+            <p>© Bsocio Humanity Fund</p>
+            <p>
+                <a href="mailto:Acquisitionteam@bsocio.org">
+                    Acquisitionteam@bsocio.org
+                </a>
+            </p>
+        </footer>
+    </div>
+
+ <script>
+(function () {
+  'use strict';
+
+  const homePage = document.getElementById('homePage');
+  const leadershipPage = document.getElementById('leadershipPage');
+
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const tabContents = document.querySelectorAll('.tab-content');
+  const logos = document.querySelectorAll('.bsocio-logo');
+  const learnMoreBtn = document.querySelector('.cta-button');
+
+  if (!homePage || !leadershipPage) return;
+
+  function navigate(path, replace = false) {
+    if (replace) {
+      history.replaceState({}, '', path);
+    } else {
+      history.pushState({}, '', path);
+    }
+    renderRoute();
+  }
+
+  function renderRoute() {
+    const path = normalizePath(window.location.pathname);
+
+    switch (path) {
+      case '/':
+        renderHome();
+        break;
+
+      case '/president':
+        renderLeadership('president');
+        break;
+
+      case '/leadership/team':
+        renderLeadership('team');
+        break;
+
+      default:
+        navigate('/', true);
+    }
+  }
+
+  function normalizePath(path) {
+    return path.replace(/\/$/, '') || '/';
+  }
+
+  function renderHome() {
+    homePage.style.display = 'block';
+    leadershipPage.style.display = 'none';
+    window.scrollTo({ top: 0 });
+  }
+
+  function renderLeadership(tab) {
+    homePage.style.display = 'none';
+    leadershipPage.style.display = 'block';
+    activateTab(tab);
+    window.scrollTo({ top: 0 });
+  }
+
+  function activateTab(tab) {
+    tabContents.forEach(el => el.classList.remove('active'));
+    tabButtons.forEach(btn => btn.classList.remove('active'));
+
+    if (tab === 'team') {
+      document.getElementById('teamTab')?.classList.add('active');
+      tabButtons[1]?.classList.add('active');
+    } else {
+      document.getElementById('presidentTab')?.classList.add('active');
+      tabButtons[0]?.classList.add('active');
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    logos.forEach(logo =>
+      logo.addEventListener('click', () => navigate('/'))
+    );
+
+    learnMoreBtn?.addEventListener('click', () =>
+      navigate('/president')
+    );
+
+    tabButtons.forEach(btn =>
+      btn.addEventListener('click', () =>
+        navigate(btn.dataset.route)
+      )
+    );
+
+    renderRoute();
+  });
+
+  window.addEventListener('popstate', renderRoute);
+
+})();
+</script>
+
+
+</body>
